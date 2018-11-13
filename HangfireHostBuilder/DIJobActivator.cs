@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     public class DIJobActivator : JobActivator
     {

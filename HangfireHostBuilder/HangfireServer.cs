@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     public class HangfireServer : IHostedService
     {

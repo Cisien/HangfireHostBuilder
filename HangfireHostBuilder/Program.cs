@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Hangfire;
 using Hangfire.MemoryStorage;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     internal class Program
     {

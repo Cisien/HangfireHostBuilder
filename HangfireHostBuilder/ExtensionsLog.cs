@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging.Internal;
 using System;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     internal class ExtensionsLog : ILog
     {
@@ -15,8 +15,7 @@ namespace ConsoleApp5
 
         public ExtensionsLog(ILogger targetLogger)
         {
-            if (targetLogger == null) throw new ArgumentNullException(nameof(targetLogger));
-            _targetLogger = targetLogger;
+            _targetLogger = targetLogger ?? throw new ArgumentNullException(nameof(targetLogger));
         }
 
         public bool Log(Hangfire.Logging.LogLevel logLevel, Func<string> messageFunc, Exception exception = null)

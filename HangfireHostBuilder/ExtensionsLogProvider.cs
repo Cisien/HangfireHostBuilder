@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     public class ExtensionsLogProvider : ILogProvider
     {
@@ -10,8 +10,7 @@ namespace ConsoleApp5
 
         public ExtensionsLogProvider(ILoggerFactory loggerFactory)
         {
-            if (loggerFactory == null) throw new ArgumentNullException(nameof(loggerFactory));
-            _loggerFactory = loggerFactory;
+            _loggerFactory = loggerFactory ?? throw new ArgumentNullException(nameof(loggerFactory));
         }
 
         public ILog GetLogger(string name)

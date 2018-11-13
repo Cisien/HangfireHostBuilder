@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     public class TestJob
     {

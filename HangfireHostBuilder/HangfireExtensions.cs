@@ -1,7 +1,6 @@
 ﻿using Hangfire;
 using Hangfire.Client;
 using Hangfire.Common;
-using Hangfire.Dashboard;
 using Hangfire.Server;
 using Hangfire.States;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace ConsoleApp5
+namespace HangfireHostBuilder
 {
     public static class HangfireExtensions
     {
